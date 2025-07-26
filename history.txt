@@ -1,0 +1,908 @@
+    1  ls
+    2  cd
+    3  pwd
+    4  ls
+    5  mkdir linux_commands
+    6  pwd
+    7  ls
+    8  mkdir dir1 dir2 dir3
+    9  ls
+   10  pwd
+   11  ls
+   12  mkdir -p dir1/test1/test2
+   13  ls
+   14  cd dir1
+   15  ls
+   16  cd test1
+   17  ls
+   18  cd ..
+   19  pwd
+   20  cd ..
+   21  pwd
+   22  cd test2
+   23  cd dir1
+   24  ls
+   25  pwd
+   26  cd test1
+   27  cd test2
+   28  pwd
+   29  /home/ec2-user/dir1/test1/test2
+   30  cd../../..
+   31  cd ../../..
+   32  pwd
+   33  /home/ec2-user/dir1/test1/test2
+   34  cd /home/ec2-user/dir1/test1/test2
+   35  pwd
+   36  cd -
+   37  clear
+   38  ls -lrt
+   39  cd dir1
+   40  touch file1
+   41  ls
+   42  touch file 2 file3
+   43  ls
+   44  touch file{4..6}
+   45  ls
+   46  ls -l
+   47  ls -lt
+   48  ls -lrt
+   49  clear
+   50  vi file1
+   51  ls -lrt
+   52  ls -lt
+   53  date
+   54  cat file1
+   55  vi file 1
+   56  cat file1
+   57  vi file1
+   58  pwd
+   59  ls
+   60  vi file1
+   61  cat file1
+   62  vi file1
+   63  cat file1
+   64  vi file1
+   65  cat file1
+   66  clear
+   67  vi file1
+   68  cat file1
+   69  vi file1
+   70  vi file
+   71  vi file1
+   72  pwd
+   73  ls
+   74  pwd
+   75  ls
+   76  pwd
+   77  ls -lrt
+   78  cd dir
+   79  cd dir1
+   80  ls -lrt
+   81  wc -l file1
+   82  wc file1
+   83  wc -w file1
+   84  wc -c file1
+   85  echo "Hello World"
+   86  echo "Hello\nDhanush"
+   87  echo -e  "Hello\nDhanush"
+   88  man wc
+   89  clear
+   90  echo "Dhanush" >file1
+   91  cat file1
+   92  vi file1
+   93  echo "Linux" >file1
+   94  cat file1
+   95  vi file1
+   96  pwd
+   97  ls
+   98  echo *
+   99  rm 2
+  100  ls
+  101  echo -e  "Hello World\nDhanush\nBushra"
+  102  echo -e  "Hello World\nDhanush\nBushra" >>file1
+  103  cat file1
+  104  setfont ter- 132n
+  105  more file1
+  106  pwd
+  107  cd dir1
+  108  more file1
+  109  vi file1
+  110  rm file1
+  111  echo *
+  112  cd file1
+  113  touch file1
+  114  ls
+  115  clear
+  116  free -h
+  117  df -h
+  118  df -h .
+  119  pwd
+  120  cd ..
+  121  ls
+  122  du -sh dir1
+  123  du -sh *
+  124  pwd
+  125  cd linux_commands
+  126  touch file{1..5}.txt
+  127  ls
+  128  touch sample{1..5}.cvs
+  129  ls
+  130  ls -lrt
+  131  echo "hello world" >file1.txt
+  132  df -h *
+  133  df -sh *
+  134  sudo unmount *
+  135  df -h *
+  136  cd ..
+  137  pwd
+  138  rm -rf linux_commands
+  139  ls
+  140  cd linux_commands
+  141  mkdir linux_commands
+  142  ls
+  143  cd linux_commands
+  144  touch file{1..5}.txt
+  145  touch sample{1..5}.csv
+  146  ls -lrt
+  147  df -sh *
+  148  df -h
+  149  du -sh *
+  150  echo "Hello World" >file1.txt
+  151  du -sh *
+  152  clear
+  153  ls *.csv
+  154  ls -lrt *.csv
+  155  vi file1.txt
+  156  du -sh file1.txt
+  157  wc -l
+  158  pwd
+  159  ls
+  160  cd linux_commands
+  161  head -5 file1.txt
+  162  head -5 file2.txt
+  163  du -sh *
+  164  head file1.txt
+  165  clear
+  166  tail -5 file1.txt
+  167  clear
+  168  tail -n+10 file1.txt
+  169  wc -l file1.txt
+  170  head -6  file1.txt | tail -1
+  171  head -6  file1.txt | tail -1 | wc -w
+  172  pwd
+  173  ls
+  174  cd linux_commands
+  175  ls
+  176  cat file.txt
+  177  cat file1.txt
+  178  grep -i the file1.txt
+  179  clear
+  180  grep -i -n the file1.txt
+  181  grep -i -cn the file1.txt
+  182  grep -i -c the file1.txt
+  183  grep -i -w the file1.txt
+  184  clear
+  185  ls -lrt
+  186  echo "Linux" >>file1.txt
+  187  echo "Linux" >> sample1.csv
+  188  echo "Linux" >> sample2.csv
+  189  echo "Linux" >> sample3.csv
+  190  grep -l Linux *
+  191  mkdir sub_dir1
+  192  cd sub_dir1
+  193  ls
+  194  echo "Linux" >> abc.txt
+  195  pwd
+  196  la
+  197  ls
+  198  mkdir sub_dir2
+  199  echo "Linux" >> xyz.txt
+  200  ls
+  201  rm xyz.txt
+  202  ls
+  203  cd sub_dir2
+  204  echo "Linux" >> xyz.txt
+  205  ls
+  206  cd ..
+  207  pwd
+  208  cd ..
+  209  pwd
+  210  grep -l Linux *
+  211  ls -lrt
+  212  grep -l -r Linux *
+  213  grep -i -l -r linux *
+  214  clear
+  215  grep -i  -e "Linux" -e "the" *
+  216  egrep -i  "Linux|the|of" *
+  217  clear
+  218  ls -lrt | grep file1.txt
+  219  ls -lrt | tail -1
+  220  grep "^L" file1.txt
+  221  grep -i "x$" file1.txt
+  222  ls -lrt
+  223  cd linux_ commands
+  224  cd linux_commands
+  225  ls -lrt
+  226  chmod 774 file5.txt
+  227  ls -lrt
+  228  clear
+  229  ls -lsrt
+  230  chmod 666 file5.txt
+  231  ls -lrt
+  232  cd ..
+  233  pwd
+  234  ls
+  235  sudo chown -R root:root dir2
+  236  ls -lrt
+  237  sudo su -
+  238  cd
+  239  clear
+  240  cat /etc/o
+  241  cat /etc/os-release
+  242  cat /etc/passwd
+  243  clear
+  244  echo $SHELL
+  245  sudo su -
+  246  cat /etc/hosts
+  247  pwd
+  248  ls -lrt
+  249  cd linux_commands
+  250  cp /etc/hosts /home/ec2-user/linux_commands/
+  251  ls -lrt
+  252  cp /etc/hosts /home/ec2-user/linux_commanda/hosts_bk
+  253  ls -lrt
+  254  cp /etc/hosts /home/ec2-user/linux_commands/hosts_bk
+  255  ls -lrt
+  256  rm hosts_bk
+  257  clear
+  258  rm hosts
+  259  ls -lrt
+  260  pwd
+  261  cp /etc/hosts .
+  262  ls -lrt
+  263  cd /etc/
+  264  ls -lrt hosts
+  265  cp hosts /home/ec2-user/linux_commands/hosts_bk
+  266  ls -lrt home/ec2-user/linux_commands
+  267  ls -lrt /home/ec2-user/linux_commands
+  268  cd /home/ec2-user/linux_commands
+  269  ls -lrt
+  270  clear
+  271  ls -lrt
+  272  cp hosts_bk hosts_b
+  273  ls -lrt
+  274  mv hosts_bk hosts1
+  275  ls -lrt
+  276  clear
+  277  mv hosts /home/ec2-user/
+  278  ls -lrt
+  279  mv subdir1 ../
+  280  mv sub_dir1 ../
+  281  ls -lrt
+  282  cd ..
+  283  ls -lrt
+  284  mv sub_dir1 linux_commands/
+  285  ls -lrt
+  286  clear
+  287  uname -r
+  288  uname -a
+  289  uname -0
+  290  uname -o
+  291  uname -m
+  292  pwd
+  293  la -lrt
+  294  ls -lrt
+  295  du -sh *
+  296  cd dir1
+  297  ls -lrt
+  298  du -sh *
+  299  clear
+  300  cd ..
+  301  pwd
+  302  ls -lrt
+  303  cd linux_commands
+  304  ls -lrt
+  305  echo "Dhanush/n Eshwar/n Goutham/n" >>file1.txt
+  306  cat file1.txt
+  307  clear
+  308  pwd
+  309  ls -lrt
+  310  clear
+  311  cd linux_commands
+  312  ls -lrt
+  313  ps -ef
+  314  sleep 30 &
+  315  ps -ef
+  316  clear
+  317  ps -ef | grep "sleep"
+  318  ps -ef | grep "sleep" | awk -F  " " '{print $2}'
+  319  ps -u ec2-user
+  320  ps
+  321  sudo yum install httpd -y
+  322  sudo service httpd start
+  323  ps -ef | grep httpd
+  324  sudo service httpd stop
+  325  sudo service httpd start
+  326  clear
+  327  uname -r
+  328  cat /etc/os-release
+  329  uname -a
+  330  uname -m
+  331  clear
+  332  cd linux_commands
+  333  ls -lrt
+  334  cd sub_dir1
+  335  ls -lrt
+  336  pwd
+  337  cd ../..
+  338  pwd
+  339  find . -iname "abc.txt"
+  340  find -iname "abc.txt"
+  341  clear
+  342  find /home/ec2-user -type f -mtime +10
+  343  find /home/ec2-user -type f -mtime -10
+  344  find /home/ec2-user -type d -mtime +10
+  345  find /home/ec2-user -type d -mtime -10
+  346  clear
+  347  find /home/ec2-user -type d -mmin -10
+  348  find /home/ec2-user -type f -mmin -1000
+  349  find /home/ec2-user -type f -mmin -10000
+  350  find /home/ec2-user -type d -mmin -10000
+  351  clear
+  352  find /home/ec2-user -type f -perm -777
+  353  find /home/ec2-user -type f -perm -776
+  354  find /home/ec2-user -type f -perm 0776
+  355  find /home/ec2-user -type f -perm 0777
+  356  find /home/ec2-user -type f -perm 0755
+  357  la -lrt
+  358  ls -lrt
+  359  find / -type f -usernec2-user
+  360  find / -type f -user ec2-user
+  361  clear
+  362  find /home/ec2-user -name "file1.txt"
+  363  find /home/ec2-user -type f -maxdepth 2
+  364  find /home/ec2-user -type f -maxdepth 3
+  365  find /home/ec2-user -type f -maxdepth 1
+  366  find /home/ec2-user -maxdepth 1 -type f
+  367  clear
+  368  find /home/ec2-user -type f | grep sub_dir1
+  369  find /home/ec2-user -type f | grep sub_dir1 | grep -v sub_dir2
+  370  find /home/ec2-user/linux_commands -type f -mtime +10
+  371  find /home/ec2-user/linux_commands -type f -mtime +10 | xargs rm
+  372  find /home/ec2-user/linux_commands -type f -size +1
+  373  find /home/ec2-user/linux_commands -type f -size +10
+  374  find /home/ec2-user/linux_commands -type f -size +1M
+  375  find /home/ec2-user/linux_commands -type f -size +1G
+  376  find /home/ec2-user/linux_commands -type d -size +1
+  377  find /home/ec2-user/linux_commands -type d -size +10
+  378  find /home/ec2-user/linux_commands -type d -size +100
+  379  cs linux_commands/sub_dir1/sub_dir2
+  380  cs linux_commands/sub_dir1
+  381  cs linux_commands/sub_dir1/sub_dir2/
+  382  cd linux_commands/sub_dir1/sub_dir2/
+  383  ls -lrt
+  384  ln -s /home/ec2-user/linux_commands/sub_dir1/sub_dir2/xyz.txt test_link
+  385  ls -lrt
+  386  cat test_link
+  387  clear
+  388  cd linux_commands/sub_dir1/sub_dir2/
+  389  cd linux_commands/sub_dir1/sub_dir2
+  390  ln /home/ec2-user/linux_commands/sub_dir1/sub_dir2/xyz.txt hard_link
+  391  ls -lrt
+  392  ln -i /home/ec2-user/linux_commands/sub_dir1/sub_dir2/xyz.txt
+  393  ls -i /home/ec2-user/linux_commands/sub_dir1/sub_dir2/xyz.txt
+  394  ls -i hard_link
+  395  ls -lart
+  396  cd ../..
+  397  ls -a
+  398  ls -i test_link
+  399  ls -i *
+  400  clear
+  401  sudo su -
+  402  id ec2-user
+  403  who
+  404  whereis httpd
+  405  whereis vim
+  406  ifconfig
+  407  yum install net-tools^C
+  408  clear
+  409  ip addr show
+  410  netstat -a
+  411  netstat -l
+  412  clear
+  413  netstat -l
+  414  host
+  415  clear
+  416  host
+  417  traceroute
+  418  cs ..
+  419  cd ..
+  420  dig google.com
+  421  nslookup google.com
+  422  hostname
+  423  clear
+  424  ps -ef | grep httpd
+  425  sudo service httpd start
+  426  ps -ef | grep httpd
+  427  ps aux
+  428  clear
+  429  pwd
+  430  cd linux_commands
+  431  diff file1.txt file2.txt
+  432  sdiff file1.txt file2.txt
+  433  cmp file1.txt file2.txt
+  434  comm file1.txt file2.txt
+  435  clear
+  436  sort
+  437  ls -lrt
+  438  ls -lrt /
+  439  cd /tmp/
+  440  ls -lrt
+  441  pwd
+  442  wget https://github.com/phayes/geoPHP/tarball/master
+  443  ls -lrt
+  444  cat master
+  445  clear
+  446  curl -v https://google.com/
+  447  curl -Is https://google.com/
+  448  lear
+  449  clear
+  450  curl -Is https://google.com/ | head -1 | cut -d " " -f2
+  451  date
+  452  cal
+  453  top
+  454  pwd
+  455  ls
+  456  ls -lrt
+  457  clear
+  458  mkdir shell_scripts
+  459  cd shell_scripts
+  460  ls
+  461  pwd
+  462  vi basic_scripts
+  463  echo $shell
+  464  echo $SHELL
+  465  vi basic_scripts
+  466  ls -lrt
+  467  ./bsic_scripts.sh
+  468  ls -lrt
+  469  rename basic_scripts basic_scripts.sh
+  470  mv basic_scripts basic_scripts.sh
+  471  ./bsic_scripts.sh
+  472  ls -lrt
+  473  ./basic_scripts.sh
+  474  chmod 764 basic_scripts.sh
+  475  ./basic_scripts.sh
+  476  clear
+  477  ./basic_scripts.sh
+  478  Dhanush Linux
+  479  ./basic_scripts.sh Dhanush Linux
+  480  cat basic_scripts.sh
+  481  vi basic_scripts.sh
+  482  ./basic_scripts.sh Dhanush Linux
+  483  sh basic_scripts.sh Dhanush Linux
+  484  vi basic_scripts.sh
+  485  sh basic_scripts.sh
+  486  clear
+  487  vi if_statement.sh
+  488  chmod 764 if_sttement.sh
+  489  chmod 764 if_statement.sh
+  490  sh if_statement.sh 5
+  491  ls - lrt
+  492  ls -lrt
+  493  sh if_statement.sh 5
+  494  chmod 764 if_statement.sh
+  495  sh if_statement.sh
+  496  sh if_statement.sh 5
+  497  vi if_statement.sh
+  498  sh if_statement.sh 5
+  499  sh if_statement.sh 4
+  500  sh if_statement.sh 5
+  501  clear
+  502  vi ifelse_statement.sh
+  503  sh ifelse_statement.sh 5
+  504  sh ifelse_statement.sh 6
+  505  vi biggest_num.sh
+  506  sh biggest_num.sh 5 8
+  507  vi biggest_num.sh
+  508  sh biggest_num.sh 5 8
+  509  sh biggest_num.sh 22 89
+  510  sh biggest_num.sh 5 8 6
+  511  sh biggest_num.sh 5 8 9
+  512  ls -lrt
+  513  cd ..
+  514  chmod -r 764 shell_scripts
+  515  ls -lrt
+  516  chmod -R 764 shell_scripts
+  517  cd shell_scripts/
+  518  ls -lrt
+  519  clear
+  520  vi elif.sh
+  521  mv elif.sh biggestof3.sh
+  522  ls
+  523  vi elif.sh
+  524  sh elif.sh 5 8 9
+  525  vi elif.sh
+  526  sh elif.sh 5 8 9
+  527  sh -x elif.sh 5 8 9
+  528  vi elif.sh
+  529  sh elif.sh 5 8 9
+  530  clear
+  531  echo $?
+  532  sh elif.
+  533  echo $?
+  534  echo $$
+  535  sleep 60 &
+  536  echo $!
+  537  echo $*
+  538  clear
+  539  pwd
+  540  ls -lrt
+  541  cd shell_scripts/
+  542  ls -lrt
+  543  vi add.sh
+  544  sh add.sh 5 6
+  545  vi add.sh
+  546  sh add.sh 5 6
+  547  vi add.sh
+  548  sh add.sh 5 6
+  549  vi add.sh
+  550  sh add.sh 5 6
+  551  vi add.sh
+  552  sh add.sh 5 6
+  553  vi add.sh
+  554  sh add.sh 5 6
+  555  vi add.sh
+  556  sh add.sh 5 6
+  557  ./add.sh 5 6
+  558  chmod u+x add.sh
+  559  ./add.sh 5 6
+  560  vi add.sh
+  561  ./add.sh 5 6
+  562  vi add.sh
+  563  ./add.sh 5 6
+  564  vi string_add.sh
+  565  sh string_add.sh 3 4
+  566  vi string_add.sh
+  567  sh string_add.sh 3 4
+  568  vi string_add.sh
+  569  sh string_add.sh 3 4
+  570  vi string_add.sh
+  571  sh string_add.sh 3 4
+  572  vi string_add.sh
+  573  clear
+  574  ls -lrt
+  575  cd shell_scripts/
+  576  ls -lrt
+  577  vi add_num.sh
+  578  sh add_num.sh
+  579  vi add_num.sh
+  580  sh add_num.sh 5 6
+  581  vi string_add.sh
+  582  sh string_add.sh 5 6
+  583  clear
+  584  vi read_password.sh
+  585  sh read_password.sh
+  586  vi read_password.sh
+  587  sh read_password.sh
+  588  vi read_password.sh
+  589  clear
+  590  cd shell_scripts/
+  591  ls -lrt
+  592  vi leap_year
+  593  sh leap_year
+  594  vi leap_year
+  595  sh leap_year
+  596  vi leap_year
+  597  sh leap_year
+  598  vi leap_year
+  599  sh leap_year
+  600  clear
+  601  vi leap_year
+  602  sh leap_year
+  603  vi leap_year
+  604  sh leap_year
+  605  vi leap_year
+  606  sh leap_year
+  607  vi leap_year
+  608  sh leap_year
+  609  vi check_files.sh
+  610  sh check_files.sh
+  611  ls -lrt
+  612  clear
+  613  crontab -l
+  614  cronlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllclear
+  615  clear
+  616  crontab -l
+  617  crontab -e
+  618  sudo yum install cronie -y
+  619  sudo systemctl enable crond.service
+  620  sudo systemctl start crond.service
+  621  sudo systemctl status crond | grep Active
+  622  crontab -l
+  623  crontab -e
+  624  pwd
+  625  ls -lrt
+  626  crontab -l
+  627  vi add_num.sh
+  628  crontab -e
+  629  crontab -l
+  630  ps -ef
+  631  ls -lrt
+  632  vi basic_scripts.sh
+  633  crontab -l
+  634  crontab -e
+  635  ps -ef
+  636  clear
+  637  vi disk_space
+  638  vi disk_space.sh
+  639  sh disk_space.sh
+  640  vi disk_space.sh
+  641  sh disk_space.sh
+  642  vi disk_space.sh
+  643  sh disk_space.sh
+  644  vi disk_space.sh
+  645  sh disk_space.sh
+  646  sydo yum install mailx -y
+  647  sudo yum install mailx -y
+  648  clear
+  649  man mailx
+  650  clear
+  651  cd shell_scripts/
+  652  ls -lrt
+  653  ps -ef
+  654  clear
+  655  sudo crontab -e
+  656  vi basic_while
+  657  sh basic_while 6
+  658  vi basic_while
+  659  sh basic_while 6
+  660  clear
+  661  vi fact_num.sh
+  662  sh fact_num.sh
+  663  vi fact_num.sh
+  664  sh fact_num.sh
+  665  vi print_file.sh
+  666  ls -lrt
+  667  sh print_file.sh read_password.sh
+  668  sh -x print_file.sh read_password.sh
+  669  clear
+  670  vi count_words_char.sh
+  671  ls -lrt
+  672  pwd
+  673  sh count_words_char.sh /home/ec2-user/shell_scripts/fact_num.sh
+  674  clear
+  675  vi count_words_char.sh
+  676  vi basic_for.sh
+  677  sh -x  basic_for.sh
+  678  clear
+  679  cd shell_scripts/
+  680  ls -lrt
+  681  clear
+  682  vi service_check.sh
+  683  sh service_check.sh httpd
+  684  vi service_check.sh
+  685  sh service_check.sh httpd
+  686  sh -x service_check.sh httpd
+  687  clear
+  688  vi service_check.sh
+  689  clear
+  690  vi service_check.sh
+  691  sh -x service_check.sh httpd
+  692  cd shell_scripts/
+  693  vi service_check.sh
+  694  ls -lrt
+  695  eccho "ghkjhASFK" 2> file.txt
+  696  cat file.txt
+  697  clear
+  698  echo "gyqdg" > error.txt 2>&1
+  699  cat error.txt
+  700  pwd
+  701  ls -lrt
+  702  cd ..
+  703  ls -lrt
+  704  cd linux_commands
+  705  ls -lrt
+  706  pwd
+  707  clear
+  708  pwd
+  709  sudo systemctl start httpd
+  710  ps -ef | grep "hattpd"
+  711  ps -ef | grep "httpd"
+  712  sudo -i
+  713  ls -lrt
+  714  cd sub_dir1/
+  715  ls -lrt
+  716  clear
+  717  touch abc{1..50}
+  718  ls -lrt
+  719  touch abc{50..100}.log
+  720  ls -lrt
+  721  pwd
+  722  clear
+  723  pwd
+  724  cd ..
+  725  pwd
+  726  ls -lrt
+  727  cd shell_scripts/
+  728  vi cleanup.sh
+  729  pwd
+  730  vi cleanup.sh
+  731  ls | wc -l
+  732  vi cleanup.sh
+  733  cd ..
+  734  cd linux_commands/
+  735  ls -lrt
+  736  ls | wc -l
+  737  cd sub_dir1/
+  738  ls -lrt
+  739  ls | wc -l
+  740  cd ..
+  741  cd shell_scripts/
+  742  sh cleanup.sh
+  743  vi cleanup.sh
+  744  clear
+  745  ls -lrt
+  746  sh -x cleanup.sh
+  747  date | cut -d " " -f1
+  748  date +%D
+  749  date +%u
+  750  date +%a
+  751  date +%a |tr '[:upper:]' '[:lower:]'
+  752  date +%a |tr '[:lower:]' '[:upper:]'
+  753  vi date.sh
+  754  cd ..
+  755  ls -lrt
+  756  cd linux_commands/
+  757  ls -lrt
+  758  touch access_log error_log
+  759  ls -lrt
+  760  cd ..
+  761  cd shell_scripts/
+  762  vi date.sh
+  763  clear
+  764  sh -x date.sh
+  765  vi date.sh
+  766  sh -x date.sh
+  767  vi date.sh
+  768  sh -x date.sh
+  769  vi date.sh
+  770  sh -x date.sh
+  771  vi date.sh
+  772  sh -x date.sh
+  773  clear
+  774  STR=Linux
+  775  echo $STR
+  776  echo "${STR:4:1}"
+  777  echo "${STR:421}"
+  778  echo "${STR:4:2}"
+  779  echo "${STR:0:4}"
+  780  echo "${STR:0:5}"
+  781  echo "${STR:0:-3}"
+  782  echo "${STR:0:-2}"
+  783  clear
+  784  vi arrayex.sh
+  785  sh arrayex.sh 1 2 3 4 5 6 7
+  786  vi arrayex.sh
+  787  sh arrayex.sh 1 2 3 4 5 6 7
+  788  vi arrayex.sh
+  789  sh arrayex.sh 1 2 3 4 5 6 7
+  790  vi arrayex.sh
+  791  sh arrayex.sh 1 2 3 4 5 6 7
+  792  vi arrayex.sh
+  793  sh arrayex.sh 1 2 3 4 5 6 7
+  794  clear
+  795  cd linux_commands/
+  796  vi weserver.sh
+  797  sudo yum install git -y
+  798  which git
+  799  whereis git
+  800  git --version
+  801  cd shell_scripts/
+  802  ls -lrt
+  803  cd ..
+  804  mkdir dirstname
+  805  cd firstname/
+  806  mkdir firstname
+  807  cd firstname/
+  808  ls -lrt
+  809  git init
+  810  ls -lart
+  811  cd .git/
+  812  la -lrt
+  813  ls -lrt
+  814  cat config
+  815  cd ..
+  816  ls -lr
+  817  ls -lrt
+  818  clear
+  819  git config --global init.defaultBranch master
+  820  git branch
+  821  ls -lrt
+  822  git config --global user.name "dhanush"
+  823  git config --global user.email "psreedhanush7@gmail.com"
+  824  cd .git/
+  825  cat config
+  826  la -lrt
+  827  ls -lrt
+  828  cd info/
+  829  ls
+  830  cd ..
+  831  ls -lrt
+  832  git remote add origin https://github.com/Peddinti0607/devops.git
+  833  cp ../shell_scripts/* .^C
+  834  cd ..
+  835  ls -lrt
+  836  cd firstname/
+  837  cp ../shell_scripts/* .^C
+  838  [ec2-user@ip-172-31-10-120 firstname]$ cp ../shell_scripts/* .^C
+  839  cp: target '.^C' is not a directory
+  840  [ec2-user@ip-172-31-10-120 firstname]$ ^C
+  841  [ec2-user@ip-172-31-10-120 firstname]$
+  842  [ec2-user@ip-172-31-10-120 firstname]$ cp ../shell_scripts/* .^C
+  843  cp: target '.^C' is not a directory
+  844  [ec2-user@ip-172-31-10-120 firstname]$ ^C
+  845  [ec2-user@ip-172-31-10-120 firstname]$
+  846  [ec2-user@ip-172-31-10-120 firstname]$ cp ../shell_scripts/* .^C
+  847  cp: target '.^C' is not a directory
+  848  [ec2-user@ip-172-31-10-120 firstname]$ ^C
+  849  [ec2-user@ip-172-31-10-120 firstname]$
+  850  cp ../shell_scripts/*
+  851  ls -lrt
+  852  cp ../shell_scripts/* .^C
+  853  cp ../shell_scripts/* .
+  854  ls -lrt
+  855  git status
+  856  clear
+  857  git status
+  858  git branch -M master
+  859  ls
+  860  git status
+  861  clear
+  862  git status
+  863  git add add.sh
+  864  git status
+  865  git commit -m "adding add.sh"
+  866  git status
+  867  git remote -v
+  868  git push
+  869  git push --set-upstream origin master
+  870  git remote add origin https://github.com/Peddinti0607/devops.git
+  871  git push --set-upstream origin master
+  872  clear
+  873  git push --set-upstream origin master
+  874  git status
+  875  git remote -v
+  876  cd ~/.ssh/
+  877  ls -lrt
+  878  cd ~/.ssh/
+  879  ls -lrt
+  880  cd ..
+  881  ls -lrt
+  882  clear
+  883  cd ~/.ssh/
+  884  ls -lart
+  885  cd ~/.ssh/
+  886  ls -lrt
+  887  cd ..
+  888  ls -lrt
+  889  cd firstname/
+  890  cd ~/.ssh/
+  891  ls -lrt
+  892  ssh-keygen -t rsa -b 4096 -C "sreedhanushpeddinti7@gmail.com"
+  893  ls -lrt
+  894  cat id_rsa.pub
+  895  cd ..
+  896  cd firstname/
+  897  ls -lrt
+  898  girt remote -v
+  899  git remote -v
+  900  git remote set-url origin git@github.com:Peddinti0607/devops.git
+  901  git remote -v
+  902  git status
+  903  clear
+  904  git pull
+  905  ls -lrt
+  906  clear
+  907  history
+  908  history >>history.txt
